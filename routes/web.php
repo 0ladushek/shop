@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $tasks = [
+        'finish my srencast',
+        'go shoping',
+        'clean home'
+    ];
+    return view('welcome', compact('tasks'));
 });
