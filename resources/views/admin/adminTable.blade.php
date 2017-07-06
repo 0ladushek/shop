@@ -5,8 +5,9 @@
     <title>test</title>
 </head>
 <body>
-    @foreach ($tasks as $value)
-        {{ $value }}<br>
+
+    @foreach ($products as $value)
+        {{ $value->title }}
     @endforeach
 </body>
 </html>

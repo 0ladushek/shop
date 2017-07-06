@@ -11,11 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    $tasks = [
-        'finish my srencast',
-        'go shoping',
-        'clean home'
-    ];
-    return view('welcome', compact('tasks'));
-});
+Route::get('/', 'ProductController@index');
+
+Route::get('one/{product}', 'ProductController@show');
+
+
+
+
+Route::get('admin', 'AdminController@index');
+
+Route::get('admin/edit/{product}', 'AdminController@edit');
+
