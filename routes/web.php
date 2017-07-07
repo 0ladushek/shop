@@ -21,4 +21,8 @@ Route::get('one/{product}', 'ProductController@show');
 Route::get('admin', 'AdminController@index');
 
 Route::get('admin/edit/{product}', 'AdminController@edit');
+Route::get('admin/delete/{product}', 'AdminController@delete');
+Route::get('admin/add', 'AdminController@add');
+
+Route::post('admin/', 'AdminController@store');
 

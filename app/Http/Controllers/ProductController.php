@@ -14,6 +14,7 @@ class ProductController extends Controller
 
     public function show( \App\Product $product)
     {
-        return view('product/show', compact('product'));// создать шаблон
+        return view('product/show', compact('product'));
     }
+
 }
